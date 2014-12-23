@@ -14,6 +14,7 @@
 		2D4722A61A4949AC00AA2F2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D4722A51A4949AC00AA2F2F /* Images.xcassets */; };
 		2D4722A91A4949AC00AA2F2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D4722A71A4949AC00AA2F2F /* LaunchScreen.xib */; };
 		2D4722B51A4949AC00AA2F2F /* ZSCheckBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D4722B41A4949AC00AA2F2F /* ZSCheckBoxTests.m */; };
+		2D4722C11A494C6700AA2F2F /* ZSCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D4722C01A494C6700AA2F2F /* ZSCheckBox.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		2D4722AE1A4949AC00AA2F2F /* ZSCheckBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZSCheckBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D4722B31A4949AC00AA2F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D4722B41A4949AC00AA2F2F /* ZSCheckBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSCheckBoxTests.m; sourceTree = "<group>"; };
+		2D4722BF1A494C6700AA2F2F /* ZSCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSCheckBox.h; sourceTree = "<group>"; };
+		2D4722C01A494C6700AA2F2F /* ZSCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSCheckBox.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		2D4722971A4949AC00AA2F2F /* ZSCheckBox */ = {
 			isa = PBXGroup;
 			children = (
+				2D4722BE1A494C4800AA2F2F /* ZSCheckBox */,
 				2D47229C1A4949AC00AA2F2F /* AppDelegate.h */,
 				2D47229D1A4949AC00AA2F2F /* AppDelegate.m */,
 				2D47229F1A4949AC00AA2F2F /* ViewController.h */,
@@ -117,6 +121,15 @@
 				2D4722B31A4949AC00AA2F2F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D4722BE1A494C4800AA2F2F /* ZSCheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				2D4722BF1A494C6700AA2F2F /* ZSCheckBox.h */,
+				2D4722C01A494C6700AA2F2F /* ZSCheckBox.m */,
+			);
+			path = ZSCheckBox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				2D4722A11A4949AC00AA2F2F /* ViewController.m in Sources */,
 				2D47229E1A4949AC00AA2F2F /* AppDelegate.m in Sources */,
 				2D47229B1A4949AC00AA2F2F /* main.m in Sources */,
+				2D4722C11A494C6700AA2F2F /* ZSCheckBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +357,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ZSCheckBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +369,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ZSCheckBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
